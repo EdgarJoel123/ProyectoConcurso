@@ -21,31 +21,59 @@
   ],
   "hito": [
     {
-      "ID_HITO": "1",
-      "F_LIMITE": "12-07-2023"
+    "ID_HITO": "1",
+    "F_LIMITE":"12-07-2023"
     }
   ],
-  "personal": [
+  "personal":[
     {
     "ID_PERSONAL": "1",
-    "CEDULAPERSONAL": "1850193838",
-    "CONTRASENAPERSONAL": "2020",
+    "CEDULAPERSONAL": "1",
+    "CONTRASENAPERSONAL": "1",
     "NOMBREPERSONAL": "JUAN",
     "APELLIDOPERSONAL": "LOPEZ",
     "ROLPERSONAL": "ADMINISTRADOR",
     "DISPOPERSONAL": "DISPONIBLE"
-    }
-  ],
-  "proyectos": [
+    },
     {
-      "ID_PROYECTO": "1",
-      "NOMBREPROYECTO": "AGUA",
-      "DESCPROYECTO": "EL AGUA DA VIDA",
-      "F_INICIOPROYECTO": "16-06-2023",
-      "F_FINPROYECTO": "16-08-2023"
+      "ID_PERSONAL": "2",
+      "CEDULAPERSONAL": "2",
+      "CONTRASENAPERSONAL": "2",
+      "NOMBREPERSONAL": "JUAN",
+      "APELLIDOPERSONAL": "LOPEZ",
+      "ROLPERSONAL": "MIEMBRO",
+      "DISPOPERSONAL": "DISPONIBLE"
+      },
+      {
+        "ID_PERSONAL": "3",
+        "CEDULAPERSONAL": "3",
+        "CONTRASENAPERSONAL": "3",
+        "NOMBREPERSONAL": "JUAN",
+        "APELLIDOPERSONAL": "LOPEZ",
+        "ROLPERSONAL": "MIEMBRO",
+        "DISPOPERSONAL": "DISPONIBLE"
+        },
+      {
+        "ID_PERSONAL": "4",
+        "CEDULAPERSONAL": "4",
+        "CONTRASENAPERSONAL": "4",
+        "NOMBREPERSONAL": "JUAN",
+        "APELLIDOPERSONAL": "LOPEZ",
+        "ROLPERSONAL": "GERENTE",
+        "DISPOPERSONAL": "DISPONIBLE"
+        }
+  ],
+  "proyectos":[
+    {
+    "ID_PROYECTO": "1",
+    "NOMBREPROYECTO": "AGUA",
+    "DESCPROYECTO": "EL AGUA DA VIDA",
+    "F_INICIOPROYECTO": "16-06-2023",
+    "F_FINPROYECTO": "16-08-2023"
     }
   ],
-  "tareas": [
+
+  "tareas":[
     {
     "ID_TAREA": "1",
     "NOMBRETAREA": "VIGILAR",
@@ -55,6 +83,36 @@
     "ESTADO": "PENDIENTE",
     "ID_PROYECTO": "1",
     "ID_HITO": "1"
-    }
+    },
+    {
+      "ID_TAREA": "2",
+      "NOMBRETAREA": "PRUEBA1",
+      "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+      "F_INICIOTAREA": "17-06-2023",
+      "F_FINTAREA": "18-06-2023",
+      "ESTADO": "PROGRESO",
+      "ID_PROYECTO": "1",
+      "ID_HITO": "1"
+      },
+      {
+        "ID_TAREA": "3",
+        "NOMBRETAREA": "PRUEBA2",
+        "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+        "F_INICIOTAREA": "17-06-2023",
+        "F_FINTAREA": "18-06-2023",
+        "ESTADO": "COMPLETADO",
+        "ID_PROYECTO": "1",
+        "ID_HITO": "1"
+        },
+        {
+          "ID_TAREA": "4",
+          "NOMBRETAREA": "PRUEBA3",
+          "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+          "F_INICIOTAREA": "17-06-2023",
+          "F_FINTAREA": "18-06-2023",
+          "ESTADO": "COMPLETADO",
+          "ID_PROYECTO": "1",
+          "ID_HITO": "1"
+          }
   ]
 }
