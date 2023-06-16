@@ -42,7 +42,10 @@ export class ServiciosService{
   tarea(id:any){
     return this.http.get<any[]>('http://localhost:3000/tareas');
   }
-  
+
+  nuevoPersonal(datos:any){
+    return this.http.post<any[]>('http://localhost:3000/personal', datos);
+  }
 
 }
 

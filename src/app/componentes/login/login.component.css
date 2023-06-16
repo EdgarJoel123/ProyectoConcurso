@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Sansation_Regular';
+    src: url('/assets/fonts/Sansation_Regular.ttf') format('truetype');
+  }
+  
+  .background{
+      background-image: url('/assets/img/fondo2.jpg');
+      height: 99vh;
+      width: 99vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+    }
+  
+  /*.logo{
+    height: 190px;
+  }*/
+  .imgTexto{
+    margin-top:275px;
+    margin-left: 70px;
+    width: 1500px;
+  }
+
+  .fondoii{
+    margin-top:120px;
+    margin-left: 190px;
+    /*margin-right: 20px;*/
+      width: 313px;
+      height: 420px;
+      background-repeat: no-repeat;
+    /* background-size: cover; */
+    /*background-image: url('/assets/img/login/fondopeque.png'); */
+    background-color: white;
+    border-radius: 20px;
+  }
+
+ /*.imputsEntrada{
+    width: 200px;
+  }*/
+  .formulario{
+    margin-top:260px;
+    margin-left: 170px;
+    background-color: aliceblue;
+  }
+
+  .auth-box{
+    width:270px;
+    height: 50px;
+    margin-left: 20px;
+
+  }
+
+  .db{
+    margin-top:40px;
+    width: 90px;
+  }
+
+.parrafoF{
+    font-family: 'Sansation_Regular', sans-serif;
+    font-size: 16px;
+    color: #3C3C3B;
+
+  }
+
+  .parrafoF1{
+    font-family: 'Sansation_Regular', sans-serif;
+    font-size: 16px;
+    color: #3C3C3B;
+    text-align: center;
+    line-height: 0;
+  }
+
+  .form-control {
+    height: 0px;
+    font-size: 17px;
+    font-family: 'Sansation_Regular', sans-serif;
+  }
+
+  
