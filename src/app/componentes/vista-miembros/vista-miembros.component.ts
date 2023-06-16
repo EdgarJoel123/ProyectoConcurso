@@ -16,19 +16,10 @@ export class VistaMiembrosComponent implements OnInit{
 
   constructor(private service: ServiciosService){}
   ngOnInit(): void {
-    this.formModal = new window.bootstrap.Modal(
-      document.getElementById('myModal')
-    );
-    this.formModalNuevo= new window.bootstrap.Modal(
-      document.getElementById('modalNuevo')
-    );
-    this.service.getEntidades()
-    .subscribe(data =>{
-      this.entidades= data;
-    })
+    
 
   }
-  
+
   openFormModal() {
     this.formModal.show();
   }
