@@ -1,12 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { detalletarea } from 'src/app/models/detalleTareas';
+import { Tareas } from 'src/app/models/tareas';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiciosService{
-  urlEntidades= "http://localhost:3000/entidadFinanciera";
+
+  private loginData: any;
+  urlTareas= " http://localhost:3000/tareas";
+  urlDetalleTarea= "http://localhost:3000/detalletarea";
 
   identificador:BehaviorSubject<any>= new BehaviorSubject<any>("identificador"); 
 
@@ -18,9 +23,23 @@ export class ServiciosService{
     this.identificador.next(id);
   }
 
-  /*getEntidades(): Observable<any> {
-    return this.http.get<Entidad>(this.urlEntidades);
-  }*/
+  setLoginData(data: any) {
+    this.loginData = data;
+  }
+
+  getLoginData() {
+    return this.loginData;
+  }
+
+
+
+  getTareas(): Observable<any> {
+    return this.http.get<Tareas>(this.urlTareas);
+  }
+
+  getDetalleTareas(): Observable<any> {
+    return this.http.get<detalletarea>(this.urlDetalleTarea);
+  }
 
 
 

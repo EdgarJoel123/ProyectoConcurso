@@ -1,31 +1,85 @@
 <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">NOMBRE XXXXX</a>
-  
-      <div>
-        <a class="navbar-brand">MIEMBROS</a>
-        <button class="btn btn-outline-success" routerLink="/">Salir</button>
+  <div class="container-fluid">
+    <a class="navbar-brand">NOMBRE XXXXX</a>
+    <div>
+      <a class="navbar-brand">MIEMBROS</a>
+      <button class="btn btn-outline-success" routerLink="/">Salir</button>
     </div>
-    </div>
-  </nav>
-  
-  <div>
-    <table class="table table-light">
-        <thead>
-          <tr>
-            <th scope="col">Tareas</th>
-            <th> </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let tarea of tareas">
-            <td>{{tarea.NOMBRETAREA}}</td>
-            <td> <button type="button" (click)="openFormModal()" class="btn btn-danger">
-              Editar
-            </button></td>
-          
-        </tr>
-        
-        </tbody>
-      </table>
   </div>
+</nav>
+
+<div class="d-flex">
+
+  <div class="col-md-4">
+    <table class="table table-light custom-table">
+      <thead>
+        <tr>
+          <th scope="col">Tareas Pendientes</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarea of tareasPendientes">
+          <td>{{tarea.NOMBRETAREA}}</td>
+          <td>
+            <button type="button"  class="btn btn-danger">
+              Editar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-md-4">
+    <table class="table table-light custom-table">
+      <thead>
+        <tr>
+          <th scope="col">Tareas en Proceso</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarea of tareasEnProceso">
+          <td>{{tarea.NOMBRETAREA}}</td>
+          <td>
+            <button type="button"  class="btn btn-danger">
+              Editar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-md-4">
+    <table class="table table-light custom-table">
+      <thead>
+        <tr>
+          <th scope="col">Tareas Completadas</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarea of tareasCompletadas">
+          <td>{{tarea.NOMBRETAREA}}</td>
+          <td>
+            <button type="button"  class="btn btn-danger">
+              Editar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Formulario modal -->
+<div class="modal" tabindex="-1" role="dialog" #formModal>
+  <!-- Contenido del formulario modal -->
+</div>
+
+<!-- Formulario modal nuevo -->
+<div class="modal" tabindex="-1" role="dialog" #formModalNuevo>
+  <!-- Contenido del formulario modal nuevo -->
+</div>

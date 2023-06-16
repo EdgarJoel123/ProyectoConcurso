@@ -7,8 +7,16 @@
   ],
   "detalletarea": [
     {
-      "ID_PERSONAL": "1",
+      "ID_PERSONAL": "2",
       "ID_TAREA": "1"
+    },
+    {
+      "ID_PERSONAL": "2",
+      "ID_TAREA": "3"
+    },
+    {
+      "ID_PERSONAL": "3",
+      "ID_TAREA": "2"
     }
   ],
   "hito": [
@@ -28,7 +36,7 @@
     "DISPOPERSONAL": "DISPONIBLE"
     },
     {
-      "ID_PERSONAL": "1",
+      "ID_PERSONAL": "2",
       "CEDULAPERSONAL": "2",
       "CONTRASENAPERSONAL": "2",
       "NOMBREPERSONAL": "JUAN",
@@ -37,9 +45,18 @@
       "DISPOPERSONAL": "DISPONIBLE"
       },
       {
-        "ID_PERSONAL": "1",
+        "ID_PERSONAL": "3",
         "CEDULAPERSONAL": "3",
         "CONTRASENAPERSONAL": "3",
+        "NOMBREPERSONAL": "JUAN",
+        "APELLIDOPERSONAL": "LOPEZ",
+        "ROLPERSONAL": "MIEMBRO",
+        "DISPOPERSONAL": "DISPONIBLE"
+        },
+      {
+        "ID_PERSONAL": "4",
+        "CEDULAPERSONAL": "4",
+        "CONTRASENAPERSONAL": "4",
         "NOMBREPERSONAL": "JUAN",
         "APELLIDOPERSONAL": "LOPEZ",
         "ROLPERSONAL": "GERENTE",
@@ -66,6 +83,36 @@
     "ESTADO": "PENDIENTE",
     "ID_PROYECTO": "1",
     "ID_HITO": "1"
-    }
+    },
+    {
+      "ID_TAREA": "2",
+      "NOMBRETAREA": "PRUEBA1",
+      "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+      "F_INICIOTAREA": "17-06-2023",
+      "F_FINTAREA": "18-06-2023",
+      "ESTADO": "PROGRESO",
+      "ID_PROYECTO": "1",
+      "ID_HITO": "1"
+      },
+      {
+        "ID_TAREA": "3",
+        "NOMBRETAREA": "PRUEBA2",
+        "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+        "F_INICIOTAREA": "17-06-2023",
+        "F_FINTAREA": "18-06-2023",
+        "ESTADO": "COMPLETADO",
+        "ID_PROYECTO": "1",
+        "ID_HITO": "1"
+        },
+        {
+          "ID_TAREA": "4",
+          "NOMBRETAREA": "PRUEBA3",
+          "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+          "F_INICIOTAREA": "17-06-2023",
+          "F_FINTAREA": "18-06-2023",
+          "ESTADO": "COMPLETADO",
+          "ID_PROYECTO": "1",
+          "ID_HITO": "1"
+          }
   ]
 }
