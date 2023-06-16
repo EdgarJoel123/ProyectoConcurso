@@ -1,80 +1,4 @@
-<main class="background">
-  <div class="row">
-      <div class='col-6'>
-          <div class="imgTexto">
-            <h2 style="color: white; font-family: 'Sansation_Regular', sans-serif;">Sistema de Gestión de Proyectos</h2>
-            <hr style="color: white; width: 750px; height: 5px;">
-            <h5 style="color: white; font-family: 'Sansation_Regular', sans-serif;">El éxito es la suma de pequeños esfuerzos repetidos día tras día.</h5>
-          </div>
-
-      </div>
-      <div class='col-6'>
-
-          <!-- <img src="../../../assets/img/login/fondopeque.png" class="fondoii"> -->
-          <form class="formulario" class="fondoii" (ngSubmit)="validarUsuario()">
-
-              <div class="auth-box">
-
-                  <div class="text-center">
-                      <span><img class="db" style="margin-top: 20px;"src="../../../assets/img/logo3.jpg"/></span>
-                     <br>
-                     <br>
-                     <p class="parrafoF1">
-                      <strong>Gestión Proyectos</strong>
-                   </p>
-                      <p class="parrafoF">Es un nuevo día con nuevas oportunidades y bendiciones.</p>
-
-                  </div>
-                  <!-- <div *ngIf="msg" class="alert alert-danger">{{ msg }}</div> -->
-                  <!-- Form -->
-                  <div class="row">
-                      <div class="col-12">
-                          <form class="form-horizontal mt-3" id="loginform" >
-                            <div class="form-group">
-                              <div class="input-group mb-3">
-                                  <span class="input-group-text" id="basic-email"><i class="ti-user"></i>
-                                      <img src="../../../assets/img/ICONOUSER.png" alt="Imagen de usuario" style="width: 20px; height: 20px;">
-                                  </span>
-
-                                  <input type="text" class="form-control form-control-lg" placeholder="Cédula"
-                                       aria-describedby="basic-addon1" #u1 [(ngModel)]="formData.username" name="username" id="username" required>
-                              </div>
-                            </div>
-                              <div class="form-group">
-                              <div class="input-group mb-3" >
-                                  <span class="input-group-text" id="password"><i class="ti-pencil"></i>
-                                      <img src="../../../assets/img/ICONOCANDADO.png" alt="Imagen de candado" style="width: 20px; height: 20px;">
-
-                                  </span>
-
-                                  <input type="password" class="form-control form-control-lg" placeholder="Contraseña"
-                                      aria-label="Password" aria-describedby="basic-addon1" #p2   name="password" id="password" [(ngModel)]="formData.password" required>
-                              </div>
-                            </div>
-                              <!--<div class="form-group row">
-                                  <div class="col-md-12">
-                                      <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="customCheck1">
-                                          <label class="form-check-label" for="customCheck1">Remember me</label>
-                                      </div>
-                                  </div>
-                              </div>-->
-
-                              <div class="form-group text-center mt-3">
-                                  <div class="col-xs-12 pb-4">
-                                      <button type="submit" class="btn d-block w-100 btn-lg btn" style="background: rgb(88,87,87);
-                                      background: linear-gradient(94deg, rgba(88,87,87,1) 0%, rgba(32,32,32,1) 100%); font-family: 'Sansation_Regular', sans-serif; ; font-size: 20px;color: whitesmoke; height:45px;" type="button">INGRESO</button>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </form>
-      </div>
-  </div>
-</main>
-<!--<ng-container>
+<ng-container>
     <div class="login-container">
       <div class="login-form">
         <form (ngSubmit)="validarUsuario()">
@@ -90,11 +14,10 @@
               <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
             </div>
           </form>
-
+          
       </div>
     </div>
-  </ng-container>-->
-
-
+  </ng-container>
+  
 
   
