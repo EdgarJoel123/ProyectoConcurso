@@ -20,13 +20,31 @@
   "personal":[
     {
     "ID_PERSONAL": "1",
-    "CEDULAPERSONAL": "1850193838",
-    "CONTRASENAPERSONAL": "2020",
+    "CEDULAPERSONAL": "1",
+    "CONTRASENAPERSONAL": "1",
     "NOMBREPERSONAL": "JUAN",
     "APELLIDOPERSONAL": "LOPEZ",
     "ROLPERSONAL": "ADMINISTRADOR",
     "DISPOPERSONAL": "DISPONIBLE"
-    }
+    },
+    {
+      "ID_PERSONAL": "1",
+      "CEDULAPERSONAL": "2",
+      "CONTRASENAPERSONAL": "2",
+      "NOMBREPERSONAL": "JUAN",
+      "APELLIDOPERSONAL": "LOPEZ",
+      "ROLPERSONAL": "MIEMBRO",
+      "DISPOPERSONAL": "DISPONIBLE"
+      },
+      {
+        "ID_PERSONAL": "1",
+        "CEDULAPERSONAL": "3",
+        "CONTRASENAPERSONAL": "3",
+        "NOMBREPERSONAL": "JUAN",
+        "APELLIDOPERSONAL": "LOPEZ",
+        "ROLPERSONAL": "GERENTE",
+        "DISPOPERSONAL": "DISPONIBLE"
+        }
   ],
   "proyectos":[
     {

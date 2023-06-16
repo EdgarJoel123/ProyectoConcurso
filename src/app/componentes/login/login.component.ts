@@ -37,22 +37,27 @@ export class LoginComponent {
 
     this.service.login(username, password).subscribe(
       users => {
-        const user = users.find(u => u.USUARIO === username && u.CONTRASENA === password);
+        const user = users.find(u => u.CEDULAPERSONAL === username && u.CONTRASENAPERSONAL === password);
 
         if (user) {
-          if (user.ROL === 'ASESOR') {
-            console.log('Inicio de sesión exitoso como Asesor');
-            alert('Inicio de sesión exitoso como Asesor' );
+          if (user.ROLPERSONAL === 'ADMINISTRADOR') {
+            console.log('Inicio de sesión exitoso como ADMINISTRADOR');
+            alert('Inicio de sesión exitoso como ADMINISTRADOR' );
             
-            this.router.navigate(['/vista-asesor']);
-          } else if (user.ROL === 'ADMIN') {
-            console.log('Inicio de sesión exitoso como Admin')
-            alert('Inicio de sesión exitoso como Admin');
+            this.router.navigate(['/admin']);
+          } else if (user.ROLPERSONAL === 'MIEMBRO') {
+            console.log('Inicio de sesión exitoso como MIEMBRO')
+            alert('Inicio de sesión exitoso como MIEMBRO');
             
-            this.router.navigate(['/vista-admin']);
-          }
+            this.router.navigate(['/miembros']);
+          } else if (user.ROLPERSONAL === 'GERENTE') {
+            console.log('Inicio de sesión exitoso como GERENTE')
+            alert('Inicio de sesión exitoso como GERENTE');
+            this.router.navigate(['/generente']);
+           
+          } 
           
-          this.service.setOdservable=user.id;
+          this.service.setOdservable=user.ID_PERSONAL;
         } else {
           console.log('Usuario o contraseña incorrectos');
           alert('Usuario o contraseña incorrectos');
