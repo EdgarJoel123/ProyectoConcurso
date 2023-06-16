@@ -1,41 +1,53 @@
 {
-  "usuarios": [
+  "detalleproyecto": [
     {
-      "CEDULA": "1234567890",
-      "NOMBRE": "Juan",
-      "APELLIDO": "Perez",
-      "USUARIO": "edgar",
-      "CONTRASENA": "1234",
-      "EMAIL": "jperez@example.com",
-      "ROL": "ASESOR",
-      "BANCO": "1",
-      "id": "2"
+      "ID_PROYECTO": "1",
+      "ID_PERSONAL": "1"
     }
   ],
-  
-  "detalleproyecto"[
-    ""
+  "detalletarea": [
+    {
+      "ID_PERSONAL": "1",
+      "ID_TAREA": "1"
+    }
+  ],
+  "hito": [
+    {
+    "ID_HITO": "1",
+    "F_LIMITE":"12-07-2023"
+    }
+  ],
+  "personal":[
+    {
+    "ID_PERSONAL": "1",
+    "CEDULAPERSONAL": "1850193838",
+    "CONTRASENAPERSONAL": "2020",
+    "NOMBREPERSONAL": "JUAN",
+    "APELLIDOPERSONAL": "LOPEZ",
+    "ROLPERSONAL": "ADMINISTRADOR",
+    "DISPOPERSONAL": "DISPONIBLE"
+    }
+  ],
+  "proyectos":[
+    {
+    "ID_PROYECTO": "1",
+    "NOMBREPROYECTO": "AGUA",
+    "DESCPROYECTO": "EL AGUA DA VIDA",
+    "F_INICIOPROYECTO": "16-06-2023",
+    "F_FINPROYECTO": "16-08-2023"
+    }
   ],
 
-  "detalletarea"[
-    ""
-  ],
-
-  "hito"[
-    ""
-  ],
-
-  "personal"[
-    ""
-  ],
-
-  "proyectos"[
-    ""
-  ],
-
-  "tareas"[
-    ""
-  ],
-
-
+  "tareas":[
+    {
+    "ID_TAREA": "1",
+    "NOMBRETAREA": "VIGILAR",
+    "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+    "F_INICIOTAREA": "17-06-2023",
+    "F_FINTAREA": "18-06-2023",
+    "ESTADO": "PENDIENTE",
+    "ID_PROYECTO": "1",
+    "ID_HITO": "1"
+    }
+  ]
 }
