@@ -1,1 +1,31 @@
-<p>vista-miembros works!</p>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">NOMBRE XXXXX</a>
+  
+      <div>
+        <a class="navbar-brand">MIEMBROS</a>
+        <button class="btn btn-outline-success" routerLink="/">Salir</button>
+    </div>
+    </div>
+  </nav>
+  
+  <div>
+    <table class="table table-light">
+        <thead>
+          <tr>
+            <th scope="col">Tareas</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tarea of tareas">
+            <td>{{tarea.NOMBRETAREA}}</td>
+            <td> <button type="button" (click)="openFormModal()" class="btn btn-danger">
+              Editar
+            </button></td>
+          
+        </tr>
+        
+        </tbody>
+      </table>
+  </div>
