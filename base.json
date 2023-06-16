@@ -1,0 +1,41 @@
+{
+  "usuarios": [
+    {
+      "CEDULA": "1234567890",
+      "NOMBRE": "Juan",
+      "APELLIDO": "Perez",
+      "USUARIO": "edgar",
+      "CONTRASENA": "1234",
+      "EMAIL": "jperez@example.com",
+      "ROL": "ASESOR",
+      "BANCO": "1",
+      "id": "2"
+    }
+  ],
+  
+  "detalleproyecto"[
+    ""
+  ],
+
+  "detalletarea"[
+    ""
+  ],
+
+  "hito"[
+    ""
+  ],
+
+  "personal"[
+    ""
+  ],
+
+  "proyectos"[
+    ""
+  ],
+
+  "tareas"[
+    ""
+  ],
+
+
+}
