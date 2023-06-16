@@ -28,15 +28,21 @@ export class ServiciosService{
 
 
   login(username: string, password: string) {
-    return this.http.get<any[]>('http://localhost:3000/usuarios');
+    return this.http.get<any[]>('http://localhost:3000/personal');
   }
 
-  banco(id:any){
-    return this.http.get<any[]>('http://localhost:3000/entidadFinanciera');
+  proyecto(id:any){
+    return this.http.get<any[]>('http://localhost:3000/proyectos');
   }
 
-  usuario(id:any){
-    return this.http.get<any[]>('http://localhost:3000/usuarios');
+  personal(id:any){
+    return this.http.get<any[]>('http://localhost:3000/personal');
   }
+
+  tarea(id:any){
+    return this.http.get<any[]>('http://localhost:3000/tareas');
+  }
+  
+
 }
 

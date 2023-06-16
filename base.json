@@ -13,41 +13,40 @@
   ],
   "hito": [
     {
-    "ID_HITO": "1",
-    "F_LIMITE":"12-07-2023"
+      "ID_HITO": "1",
+      "F_LIMITE": "12-07-2023"
     }
   ],
-  "personal":[
+  "personal": [
     {
-    "ID_PERSONAL": "1",
-    "CEDULAPERSONAL": "1850193838",
-    "CONTRASENAPERSONAL": "2020",
-    "NOMBREPERSONAL": "JUAN",
-    "APELLIDOPERSONAL": "LOPEZ",
-    "ROLPERSONAL": "ADMINISTRADOR",
-    "DISPOPERSONAL": "DISPONIBLE"
+      "ID_PERSONAL": "1",
+      "CEDULAPERSONAL": "1850193838",
+      "CONTRASENAPERSONAL": "2020",
+      "NOMBREPERSONAL": "JUAN",
+      "APELLIDOPERSONAL": "LOPEZ",
+      "ROLPERSONAL": "ADMINISTRADOR",
+      "DISPOPERSONAL": "DISPONIBLE"
     }
   ],
-  "proyectos":[
+  "proyectos": [
     {
-    "ID_PROYECTO": "1",
-    "NOMBREPROYECTO": "AGUA",
-    "DESCPROYECTO": "EL AGUA DA VIDA",
-    "F_INICIOPROYECTO": "16-06-2023",
-    "F_FINPROYECTO": "16-08-2023"
+      "ID_PROYECTO": "1",
+      "NOMBREPROYECTO": "AGUA",
+      "DESCPROYECTO": "EL AGUA DA VIDA",
+      "F_INICIOPROYECTO": "16-06-2023",
+      "F_FINPROYECTO": "16-08-2023"
     }
   ],
-
-  "tareas":[
+  "tareas": [
     {
-    "ID_TAREA": "1",
-    "NOMBRETAREA": "VIGILAR",
-    "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
-    "F_INICIOTAREA": "17-06-2023",
-    "F_FINTAREA": "18-06-2023",
-    "ESTADO": "PENDIENTE",
-    "ID_PROYECTO": "1",
-    "ID_HITO": "1"
+      "ID_TAREA": "1",
+      "NOMBRETAREA": "VIGILAR",
+      "DESCTAREA": "SE DEBE VIGILAR COMO SE COMPORTA",
+      "F_INICIOTAREA": "17-06-2023",
+      "F_FINTAREA": "18-06-2023",
+      "ESTADO": "PENDIENTE",
+      "ID_PROYECTO": "1",
+      "ID_HITO": "1"
     }
   ]
 }
