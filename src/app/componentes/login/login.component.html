@@ -30,23 +30,27 @@
                   <div class="row">
                       <div class="col-12">
                           <form class="form-horizontal mt-3" id="loginform" >
+                            <div class="form-group">
                               <div class="input-group mb-3">
                                   <span class="input-group-text" id="basic-email"><i class="ti-user"></i>
                                       <img src="../../../assets/img/ICONOUSER.png" alt="Imagen de usuario" style="width: 20px; height: 20px;">
                                   </span>
 
                                   <input type="text" class="form-control form-control-lg" placeholder="Cédula"
-                                       aria-describedby="basic-addon1" #u1 [(ngModel)]="formData.username" name="email" id="email">
+                                       aria-describedby="basic-addon1" #u1 [(ngModel)]="formData.username" name="username" id="username" required>
                               </div>
-                              <div class="input-group mb-3">
+                            </div>
+                              <div class="form-group">
+                              <div class="input-group mb-3" >
                                   <span class="input-group-text" id="password"><i class="ti-pencil"></i>
                                       <img src="../../../assets/img/ICONOCANDADO.png" alt="Imagen de candado" style="width: 20px; height: 20px;">
 
                                   </span>
 
                                   <input type="password" class="form-control form-control-lg" placeholder="Contraseña"
-                                      aria-label="Password" aria-describedby="basic-addon1" #p2 [(ngModel)]="formData.password"  name="password" id="passwprd">
+                                      aria-label="Password" aria-describedby="basic-addon1" #p2   name="password" id="password" [(ngModel)]="formData.password" required>
                               </div>
+                            </div>
                               <!--<div class="form-group row">
                                   <div class="col-md-12">
                                       <div class="form-check">

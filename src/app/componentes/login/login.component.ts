@@ -1,9 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/app/models/usuario';
 import { ServiciosService } from '../services/servicios.service';
-import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,7 +12,7 @@ export class LoginComponent {
 
 
   usuario: Usuario[];
-  
+
   USUARIO: string;
   CONTRASENA: string;
 
@@ -28,8 +27,8 @@ export class LoginComponent {
   constructor(private service: ServiciosService, private router: Router, private http: HttpClient) {
 
    }
-  
- 
+
+
 
 
   validarUsuario() {
@@ -43,20 +42,20 @@ export class LoginComponent {
           if (user.ROLPERSONAL === 'ADMINISTRADOR') {
             console.log('Inicio de sesión exitoso como ADMINISTRADOR');
             alert('Inicio de sesión exitoso como ADMINISTRADOR' );
-            
+
             this.router.navigate(['/admin']);
           } else if (user.ROLPERSONAL === 'MIEMBRO') {
             console.log('Inicio de sesión exitoso como MIEMBRO')
             alert('Inicio de sesión exitoso como MIEMBRO');
-            
+
             this.router.navigate(['/miembros']);
           } else if (user.ROLPERSONAL === 'GERENTE') {
             console.log('Inicio de sesión exitoso como GERENTE')
             alert('Inicio de sesión exitoso como GERENTE');
             this.router.navigate(['/generente']);
-           
-          } 
-          
+
+          }
+
           this.service.setOdservable=user.ID_PERSONAL;
         } else {
           console.log('Usuario o contraseña incorrectos');
