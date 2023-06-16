@@ -18,11 +18,27 @@ export class VistaMiembrosComponent implements OnInit {
   @ViewChild('formModal') formModal: any;
   @ViewChild('formModalNuevo') formModalNuevo: any;
 
+<<<<<<< HEAD
   constructor(private service: ServiciosService) {}
 
   // VistaMiembrosComponent.ts
 ngOnInit(): void {
   this.loginData = this.service.getLoginData(); // Obtén los datos del inicio de sesión desde el AuthService
+=======
+  constructor(private service: ServiciosService){}
+  ngOnInit(): void {
+    
+
+  }
+
+  openFormModal() {
+    this.formModal.show();
+  }
+  saveSomeThing() {
+    // confirm or save something
+    this.formModal.hide();
+  }
+>>>>>>> 4a3034d29625faab855eafc26f8868dbf3c52856
 
   if (this.loginData && this.loginData.username) {
     const username = this.loginData.username;
